@@ -1,0 +1,36 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Book an Appointment</h2>
+        <form action="book.php" method="post">
+            <label for="patient_name">Your Name:</label>
+            <input type="text" name="patient_name" required>
+
+            <label for="appointment_date">Select Date:</label>
+            <input type="date" name="appointment_date" id="appointment_date" required>
+
+            <!-- Time slots dropdown -->
+            <label for="appointment_time">Select Time:</label>
+            <select name="appointment_time" id="appointment_time" required>
+                <!-- Time slots will be populated dynamically using JavaScript -->
+            </select>
+
+            <input type="submit" value="Book Appointment">
+        </form>
+
+        <!-- Stylish Admin login button -->
+        <a href="admin_login.html" class="admin-login-btn">Admin Login</a>
+    </div>
+
+    <!-- Include JavaScript to populate time slots dynamically -->
+    <script src="script.js"></script>
+</body>
+</html>
